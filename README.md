@@ -13,6 +13,7 @@ Each module has its own page with the course overview, the skills it covers, and
 | Module | Focus | Stack |
 | --- | --- | --- |
 | [**LDSCI5207 — Experimental Data Science Project**](LDSCI5207%20Experimental%20Data%20Science%20Project) | A web app comparing East London councils on measures they control, using public London data | Python, pandas, Streamlit, Plotly |
+| [**LCSCI5208 — Database Design**](LCSCI5208%20Database%20Design) | Designing a relational database from a business brief, from ER diagram to SQL queries | MySQL, SQL, Python |
 | [**LCSCI6206 — Fundamentals of Software Engineering**](LCSCI6206%20Fundamentals%20of%20Software%20Engineering) | Building, testing and iterating on applications with version control | Dart, Flutter, Git |
 | [**LDSCI6253 — Advanced Information Presentation & Visualisation**](LDSCI6253%20Advanced%20Information%20Presentation%20%26%20Visualisation) | Designing clear, honest and effective data visualisations | Python, Jupyter, Altair |
 
@@ -20,9 +21,9 @@ Each module has its own page with the course overview, the skills it covers, and
 
 ## About this work
 
-All material work in this repository is my own however, where permitted (and supplied) by the university, [Claude AI](https://www.anthropic.com/claude) has been used as an assistant. AI usage and requirements differ between modules and assessments, on a case by case basis and all AI usage is in line with the guidelines set for each area.
+All material work in this repository is my own. Where permitted (and supplied) by the university, [Claude AI](https://www.anthropic.com/claude) has been used as an assistant. AI usage and requirements differ between modules and assessments and are decided on a case-by-case basis, and all AI usage is in line with the guidelines set for each area.
 
-Claude Usage:
+### How Claude was used
 
 - Assembling the README files in this repository to build a coherent map of my work that properly represents my efforts.
 - Fixing dependencies and errors created by compiling all of my work into one repository.
