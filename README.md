@@ -12,6 +12,7 @@ Each module has its own page with the course overview, the skills it covers, and
 
 | Module | Focus | Stack |
 | --- | --- | --- |
+| [**LCSCI5205 — Object-Oriented Design**](LCSCI5205%20Object-Oriented%20Design) | Two C# console apps, a pet store and a smart parking system, demonstrating inheritance, polymorphism, interfaces and design patterns | C#, .NET |
 | [**LDSCI5207 — Experimental Data Science Project**](LDSCI5207%20Experimental%20Data%20Science%20Project) | A web app comparing East London councils on measures they control, using public London data | Python, pandas, Streamlit, Plotly |
 | [**LCSCI5208 — Database Design**](LCSCI5208%20Database%20Design) | Designing a relational database from a business brief, from ER diagram to SQL queries | MySQL, SQL, Python |
 | [**LCSCI6206 — Fundamentals of Software Engineering**](LCSCI6206%20Fundamentals%20of%20Software%20Engineering) | Building, testing and iterating on applications with version control | Dart, Flutter, Git |

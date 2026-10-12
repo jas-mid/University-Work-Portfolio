@@ -1,0 +1,178 @@
+AE2 CODE REPORT: SMART PARKING SYSTEM (CONDENSED)
+===============================================
+
+CLASSES
+-------
+Six classes and two interfaces, each an abstraction of a real part of a parking garage:
+
+  1. ParkingSystem              - back-end of the garage's parking machines
+  2. ParkingSpots               - abstract overview of every spot type the system works with
+  3. DisabledParkingSpot        - spots or sensors for disabled parking only
+  4. ElectricVehicleParkingSpot - spots or sensors for electric vehicles only
+  5. RegularParkingSpot         - all remaining spots
+  6. Program                    - front-end (e.g. touchscreen or buttons) that passes user
+                                  input to the ParkingSystem
+
+ISubject and IObserver act as the framework for spot sensors (subjects) that detect parked
+cars and report to the parking machines (observers), so the system can direct users to empty
+spaces.
+
+
+OBJECTS
+-------
+Main creates the objects at runtime: a ParkingSpots subclass object for each space, holding
+its occupancy status, and the single ParkingSystem instance that handles interactions
+between users and spaces. They update and respond to each other as the user makes choices.
+For example, when a user leaves a space:
+
+  allUserParkingSpots.Remove(personParkingSpot);
+  allParkingSpots[personParkingSpot].UpdateAvailability(true);
+
+
+CONSTRUCTORS
+------------
+Every concrete class has a constructor, so each instance is created as intended and its
+input values are assigned to the right properties. Main calls them to create the car park's
+spaces:
+
+  public RegularParkingSpot(Boolean isRegularSpotAvailable)
+  {
+      this.isRegularSpotAvailable = isRegularSpotAvailable;
+  }
+
+  DisabledParkingSpot spot1 = new DisabledParkingSpot(true);
+
+
+INHERITANCE AND IMPLEMENTATION
+------------------------------
+Every parking spot type inherits from the abstract ParkingSpots class and overrides its
+three methods, so the correct information is returned even when they are called through a
+list of the abstract type. ISubject and IObserver are written once and implemented where
+needed, giving reusable code that leaves the system open to expansion.
+
+  class RegularParkingSpot: ParkingSpots, ISubject
+  class ParkingSystem: IObserver
+
+
+ENCAPSULATION
+-------------
+Information is kept only where it is needed. Each subject's list of observers is private,
+so observers are not aware of each other, and each spot's state is private so it is only
+shared with subscribed observers.
+
+  private List<IObserver> observers = new List<IObserver>();
+  private Boolean isOccupied;
+
+
+POLYMORPHISM
+------------
+The methods inherited from ParkingSpots return different results depending on the subclass
+they are called on. TypeOfParking() returns "Electric vehicle parking" for an electric
+vehicle spot and "regular parking" for a regular spot:
+
+  public override string TypeOfParking()
+  {
+      return "Electric vehicle parking";
+  }
+
+
+SINGLETON DESIGN PATTERN
+------------------------
+ParkingSystem is a singleton: its Instance property creates the object the first time it is
+used and returns that same object every time after.
+
+  static ParkingSystem _Instance;
+  public static ParkingSystem Instance
+  {
+      get
+      {
+          if (_Instance == null)
+          {
+              _Instance = new ParkingSystem();
+          }
+          return _Instance;
+      }
+  }
+
+ParkingSystem is the bridge between user input in Main and the parking spot objects, so
+having only one instance keeps a single channel of communication and prevents conflicts in
+what the system stores and outputs.
+
+The singleton code was inspired by or directly taken from the Week 4 Lab and repurposed for
+the ParkingSystem class.
+
+
+OBSERVER DESIGN PATTERN
+-----------------------
+The observer pattern reports to the system which spaces are occupied and which are empty.
+
+  public interface ISubject
+  {
+      public void Subscribe(IObserver observer);
+      public void Unsubscribe(IObserver observer);
+  }
+
+  public interface IObserver
+  {
+      public void Update(Boolean isAvailable);
+  }
+
+ParkingSystem is the observer and implements Update(). The three parking spot classes are
+the subjects: they notify their observers whenever their occupancy status changes, and
+subscribing or unsubscribing adds or removes an observer from their private list.
+
+  public Boolean isDisabledParkingSpotsAvailable
+  {
+      get => isOccupied;
+      set
+      {
+          this.isOccupied = value;
+          Notify(value);
+      }
+  }
+
+Much of the observer pattern code was taken from the Week 8 Lab and repurposed for this
+project.
+
+
+SOLID PRINCIPLES
+----------------
+Single Responsibility
+  Each class has one purpose: ISubject and IObserver provide the observer pattern functions,
+  ParkingSystem handles parking spot status data, ParkingSpots defines what spot types do,
+  each spot subclass defines one type of spot, and Program contains Main().
+
+Open/Closed
+  The ParkingSpots abstract class contains everything needed to add a new type of space
+  without modifying existing code:
+
+    abstract class ParkingSpots {
+        public abstract Boolean ReturnAvailiability ();
+        public abstract string TypeOfParking();
+        public abstract void UpdateAvailability(Boolean isAvailable);
+    }
+
+  However, this is not followed throughout. Main has separate code and lists for each spot
+  type. To be fully open/closed, the selection would need reusable functions that work from
+  whichever spot type is being handled.
+
+Liskov Substitution
+  Every spot type inherits from ParkingSpots, so any code using the ParkingSpots type works
+  with any of its subclasses. All nine spots, of all three types, are stored in a single
+  List<ParkingSpots> without losing any functionality:
+
+    List<ParkingSpots> allParkingSpots = new List<ParkingSpots>();
+    allParkingSpots.Add(spot1);   // DisabledParkingSpot
+    allParkingSpots.Add(spot4);   // RegularParkingSpot
+    allParkingSpots.Add(spot7);   // ElectricVehicleParkingSpot
+
+Interface Segregation
+  Each interface is specific to the classes that implement it and is used in full: ISubject
+  by the parking spots and IObserver by the system. No class is forced to implement
+  functions it does not need, and no special-case interfaces are required.
+
+Dependency Inversion
+  Apart from Program, every class inherits or implements from an abstraction above it, so
+  dependency only runs top-down. The concrete spot classes all derive from the abstract
+  ParkingSpots class (see the UML diagram), so the details of each spot type can change
+  without affecting the other classes.
