@@ -21,12 +21,18 @@ A cross-platform Flutter app that splits the cost of a fuel bill between everyon
 
 The app was built in stages across Labs 02 and 03, from the first project setup to the finished app.
 
+## Requirements
+
+- **Flutter SDK** with Dart 3.13 or later. Tested with Flutter 3.47.5.
+- **A device to run on:** Chrome, or an Android device or emulator. The project includes only the web and Android platforms.
+- No other files or internet access are needed once `flutter pub get` has downloaded the packages.
+
 ## Running the app
 
 ```bash
 cd fuel_cost_share_app
 flutter pub get
-flutter run
+flutter run -d chrome        # or pick an Android device with: flutter devices
 ```
 
 ## Running the tests

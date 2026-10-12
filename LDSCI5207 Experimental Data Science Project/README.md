@@ -69,6 +69,13 @@ To run the tests:
 pytest test_sample.py
 ```
 
+### Requirements and dependencies
+
+- **Python 3.11 or later.** The pinned NumPy version needs at least 3.11. Tested with Python 3.13 and 3.14.
+- **Windows or macOS.** The pages folder is named `Pages`, but Streamlit looks for `pages`. That works on Windows and macOS, whose file systems ignore case, but not on Linux. To run it on Linux, rename the folder to `pages` and update the import at the top of `test_sample.py` to match.
+- **Data files:** the app reads the three `EDSP_*.csv` files in the project folder, so it runs without an internet connection. The council contact and voting buttons open the councils' own websites.
+- **Python packages:** `requirements.txt` is a full snapshot of the environment the project was built in, so it also lists some packages the app doesn't use. The packages the app needs are pandas, Plotly, Streamlit and pytest.
+
 ---
 
 ## Data sources

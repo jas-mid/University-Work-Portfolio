@@ -34,9 +34,24 @@
 
 ## Running the work
 
+Each lab is self-contained and has its own `requirements.txt`, so any lab can be downloaded and run on its own. GitHub also shows notebooks in the browser, so you can see the outputs without running anything.
+
 ```bash
-pip install jupyter pandas altair
+cd "Labs/Lab 01 - Simple Visualisations"   # or any other lab folder
+python -m venv venv
+venv\Scripts\activate                      # macOS / Linux: source venv/bin/activate
+pip install -r requirements.txt
 jupyter notebook
 ```
 
-Open each `.ipynb` file from inside its own lab folder so the relative paths to `Data & Resources/` work. GitHub also shows notebooks in the browser, so you can see the outputs without running anything.
+Start Jupyter from inside the lab folder so that the notebook can find its data files. Tested with Python 3.13.
+
+| Lab | Libraries | Files it needs | Internet needed? |
+| --- | --- | --- | --- |
+| Lab 01 | pandas, matplotlib | `Data & Resources/london_new_home_buyers-1.csv`, `Data & Resources/relative_poverty-1.csv` | No |
+| Lab 02 | pandas, NumPy, Altair, vega_datasets | None | Yes: the `movies` dataset is downloaded |
+| Lab 03 | pandas, Altair, vega_datasets | None | Yes: the `population`, `unemployment_across_industries` and `flights_5k` datasets are downloaded |
+| Lab 04 | pandas, NumPy, Altair, vega_datasets | `lab_toolkit.py`, the module's helper file, which must stay next to the notebook | No |
+
+> [!NOTE]
+> Lab 04 is in progress. Its setup cells run, but the colour challenges have not been completed yet, so the cells after them will show errors until they are filled in.
