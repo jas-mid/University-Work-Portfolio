@@ -12,6 +12,7 @@ Each module has its own page with the course overview, the skills it covers, and
 
 | Module | Focus | Stack |
 | --- | --- | --- |
+| [**LDSCI5207 — Experimental Data Science Project**](LDSCI5207%20Experimental%20Data%20Science%20Project) | A web app comparing East London councils on measures they control, using public London data | Python, pandas, Streamlit, Plotly |
 | [**LCSCI6206 — Fundamentals of Software Engineering**](LCSCI6206%20Fundamentals%20of%20Software%20Engineering) | Building, testing and iterating on applications with version control | Dart, Flutter, Git |
 | [**LDSCI6253 — Advanced Information Presentation & Visualisation**](LDSCI6253%20Advanced%20Information%20Presentation%20%26%20Visualisation) | Designing clear, honest and effective data visualisations | Python, Jupyter, Altair |
 
