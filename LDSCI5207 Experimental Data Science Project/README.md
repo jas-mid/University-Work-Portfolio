@@ -49,7 +49,7 @@ After the module ended, I kept developing the app as a standalone project: **[Ea
 - a larger test suite (41 tests)
 - an MIT licence and a data sources page
 
-The code in this folder is kept exactly as submitted, so the two can be compared.
+The code in this folder is unchanged from the submitted version, so the two can be compared. The only changes are that unused leftover files and the virtual environment were removed, and a Streamlit setting was added to hide the default sidebar menu.
 
 ---
 
