@@ -19,9 +19,9 @@ Each module has its own page with the course overview, the skills it covers, and
 
 ## About this work
 
-All work in this repository is my own. Where permitted by the university, I have been assisted by [Claude](https://www.anthropic.com/claude), an AI assistant made by Anthropic. Because requirements differ between modules and assessments, this is decided case by case and always follows the rules set for each piece of work.
+All work in this repository is my own however, where permitted by the university, [Claude AI](https://www.anthropic.com/claude) has been used as an assistant. AI usage and requirements differ between modules and assessments, on a case by case basis and all AI usage is in line with the guidelines set for each area.
 
-The README files in this repository were compiled with the help of Claude. Datasets and lab briefs belong to their original authors and to Northeastern University London.
+The README files in this repository were compiled with the help of Claude, so they can fully represent the work for each module. Datasets, resources and lab briefs belong to their original authors and to Northeastern University London.
 
 ---
 
@@ -30,4 +30,4 @@ The README files in this repository were compiled with the help of Claude. Datas
 - **GitHub:** [@jas-mid](https://github.com/jas-mid)
 - **LinkedIn:** [Jasper Middleton](https://www.linkedin.com/in/jasper-middleton)
 
-I'm happy to talk through any of this work in more detail.
+Please reach out if you would like to know more about each bit of work.
