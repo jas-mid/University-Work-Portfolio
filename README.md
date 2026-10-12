@@ -27,7 +27,8 @@ All material work in this repository is my own. Where permitted (and supplied) b
 
 ### How Claude was used
 
-- Assembling the README files in this repository to build a coherent map of my work that properly represents my efforts.
+- Assembling the README files in this repository to tie together course descriptions, relevant work, and the overall takeaways.
+- Auditing the file structure to make the portfolio a more coherent hub of work. 
 - Fixing dependencies and errors created by compiling all of my work into one repository.
 
 Datasets, resources and lab briefs belong to their original authors and/or to Northeastern University London.
