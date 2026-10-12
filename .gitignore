@@ -1,0 +1,77 @@
+# ------------------------------------------------------------
+# Lab templates (blank scaffolds copied for each new lab)
+# ------------------------------------------------------------
+**/Lab 0X - Template/
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Office lock files created while a document is open
+~$*
+
+# ------------------------------------------------------------
+# Editors and IDEs
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+.history/
+
+# ------------------------------------------------------------
+# Python and Jupyter
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# Flutter and Dart
+# ------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.widget_preview/
+app.*.symbols
+app.*.map.json
+
+# ------------------------------------------------------------
+# Android, Gradle and Kotlin
+# ------------------------------------------------------------
+.gradle/
+.kotlin/
+.cxx/
+local.properties
+captures/
+GeneratedPluginRegistrant.java
+
+# ------------------------------------------------------------
+# Secrets and signing keys (never commit these)
+# ------------------------------------------------------------
+.env
+.env.*
+key.properties
+*.keystore
+*.jks
+
+# ------------------------------------------------------------
+# Logs and temporary files
+# ------------------------------------------------------------
+*.log
+*.tmp
