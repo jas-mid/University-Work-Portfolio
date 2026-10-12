@@ -1,4 +1,4 @@
-# uk.ac.nulondon:project1
+# LCSCI4208 FCSII AE1
 
 Project 1, Image Handling
 
