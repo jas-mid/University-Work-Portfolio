@@ -1,6 +1,6 @@
 # Database Design AE1: Assessment Brief (Simplified)
 
-Individual Coursework 2025–26
+Individual Coursework
 
 ## Assessment Task
 
