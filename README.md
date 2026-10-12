@@ -12,6 +12,7 @@ Each module has its own page with the course overview, the skills it covers, and
 
 | Module | Focus | Stack |
 | --- | --- | --- |
+| [**LCSCI4208 — Fundamentals of Computer Science II**](LCSCI4208%20Fundamentals%20of%20Computer%20Science%20II) | Java image editors that shrink images by removing pixel columns and, in a group project, lowest-energy seams | Java, Maven |
 | [**LDSCI4209 — Probability and Statistics**](LDSCI4209%20Probability%20and%20Statistics) | Statistical testing, estimation and simulation in R, from t-tests and chi-squared tests to the Central Limit Theorem | R |
 | [**LCSCI5205 — Object-Oriented Design**](LCSCI5205%20Object-Oriented%20Design) | Two C# console apps, a pet store and a smart parking system, demonstrating inheritance, polymorphism, interfaces and design patterns | C#, .NET |
 | [**LDSCI5207 — Experimental Data Science Project**](LDSCI5207%20Experimental%20Data%20Science%20Project) | A web app comparing East London councils on measures they control, using public London data | Python, pandas, Streamlit, Plotly |

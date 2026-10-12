@@ -1,0 +1,1 @@
+[java.awt.Color[r=153,g=217,b=234], java.awt.Color[r=153,g=217,b=234], java.awt.Color[r=168,g=230,b=29], java.awt.Color[r=168,g=230,b=29], java.awt.Color[r=153,g=217,b=234], java.awt.Color[r=77,g=109,b=243], java.awt.Color[r=77,g=109,b=243], java.awt.Color[r=245,g=228,b=156]]
