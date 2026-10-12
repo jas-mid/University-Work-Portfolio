@@ -39,6 +39,14 @@ A multi-page Streamlit web app that helps residents of East London see how their
 
 ---
 
+## Work
+
+| Work | Description | Stack |
+| --- | --- | --- |
+| [AE1 — East London Council Comparison App](AE1%20-%20East%20London%20Council%20Comparison%20App) | The submitted version of the app, with its data files and tests. Includes the [simplified brief](AE1%20-%20East%20London%20Council%20Comparison%20App/Brief%20and%20Info/EDSP-AE1-Brief-Simplified.md). | Python, pandas, Streamlit, Plotly |
+
+---
+
 ## Where it went next
 
 After the module ended, I kept developing the app as a standalone project: **[East London Council Tracker](https://github.com/jas-mid/East-London-Council-Tracker)**. It takes the academic version further with:
@@ -56,7 +64,7 @@ The code in this folder is unchanged from the submitted version, so the two can 
 ## Running the submitted version
 
 ```bash
-cd "EDSP Project"
+cd "AE1 - East London Council Comparison App/AE1 code"
 python -m venv venv
 venv\Scripts\activate        # macOS / Linux: source venv/bin/activate
 pip install -r requirements.txt

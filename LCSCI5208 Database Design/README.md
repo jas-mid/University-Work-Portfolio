@@ -25,25 +25,25 @@
 
 | Work | Description | Stack |
 | --- | --- | --- |
-| [AE1 — EduConnect Database](AE1) | Designing a database for EduConnect, an online learning platform moving off spreadsheets. It covers instructors, students, courses, lessons, assessments, certificates and discussion forums. Includes the final ER diagram and a Python script that runs a report query against the module's MySQL database. | MySQL, SQL, Python |
+| [AE1 — EduConnect Database](AE1%20-%20EduConnect%20Database) | Designing a database for EduConnect, an online learning platform moving off spreadsheets. It covers instructors, students, courses, lessons, assessments, certificates and discussion forums. Includes the final ER diagram and a Python script that runs a report query against the module's MySQL database. | MySQL, SQL, Python |
 
 ### AE1 ER diagram
 
-The final entity-relationship diagram, built from the [assessment brief](AE1/Brief%20and%20Info/DD-AE1-Brief-Simplified.md) and its eight business rules. It is a conceptual design for the full EduConnect platform, so it models entities and relationships that go beyond the database used in the module.
+The final entity-relationship diagram, built from the [simplified brief](AE1%20-%20EduConnect%20Database/Brief%20and%20Info/DD-AE1-Brief-Simplified.md) and its eight business rules. It is a conceptual design for the full EduConnect platform, so it models entities and relationships that go beyond the database used in the module.
 
-![EduConnect entity-relationship diagram](AE1/Submission%20Outputs/DD-Final-ER-Diagram.jpg)
+![EduConnect entity-relationship diagram](AE1%20-%20EduConnect%20Database/Submission%20Outputs/DD-AE1-ER-Diagram.jpg)
 
 ---
 
 ## Running the work
 
-[`AE1/dbquery.py`](AE1/dbquery.py) connects to the module's MySQL database (`ae1db`), runs a report of each student's completed and remaining resources and their grade average, then prints the results.
+[`dbquery.py`](AE1%20-%20EduConnect%20Database/dbquery.py) connects to the module's MySQL database (`ae1db`), runs a report of each student's completed and remaining resources and their grade average, then prints the results.
 
 > [!NOTE]
 > The `ae1db` database used in the module is no longer available, so it isn't included here. The script is shown for its code: the SQL query and how Python connects to MySQL. It will not run without that database.
 
 ```bash
-cd AE1
+cd "AE1 - EduConnect Database"
 python -m venv venv
 venv\Scripts\activate        # macOS / Linux: source venv/bin/activate
 pip install -r requirements.txt

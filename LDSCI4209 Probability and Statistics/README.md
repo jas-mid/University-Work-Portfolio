@@ -27,9 +27,9 @@
 
 | Work | Description | Stack |
 | --- | --- | --- |
-| [AE1 — Set Exercises](Assessments/AE1%20-%20Set%20Exercises) | Statistics exercises answered in R: a hypothesis test, confidence interval and histogram for chocolate bar masses (A.1), a bar chart of student subjects (A.2), a chi-squared test of favourite colour against favourite drink (A.3), and a Central Limit Theorem simulation (B.2). Includes the [simplified brief](Assessments/AE1%20-%20Set%20Exercises/Brief%20and%20Info/PS-AE1-Brief-Simplified.md). | R |
+| [AE1 — Set Exercises](AE1%20-%20Set%20Exercises) | Statistics exercises answered in R: a hypothesis test, confidence interval and histogram for chocolate bar masses (A.1), a bar chart of student subjects (A.2), a chi-squared test of favourite colour against favourite drink (A.3), and a Central Limit Theorem simulation (B.2). Includes the [simplified brief](AE1%20-%20Set%20Exercises/Brief%20and%20Info/PS-AE1-Brief-Simplified.md). | R |
 
-Each script in [`AE1 code`](Assessments/AE1%20-%20Set%20Exercises/AE1%20code) answers one part of the brief, and its file name starts with the question it answers:
+Each script in [`AE1 code`](AE1%20-%20Set%20Exercises/AE1%20code) answers one part of the brief, and its file name starts with the question it answers:
 
 | Script | Question |
 | --- | --- |
@@ -47,7 +47,7 @@ Each script in [`AE1 code`](Assessments/AE1%20-%20Set%20Exercises/AE1%20code) an
 Open a script in RStudio and run it, or run it from a terminal:
 
 ```bash
-cd "Assessments/AE1 - Set Exercises/AE1 code"
+cd "AE1 - Set Exercises/AE1 code"
 Rscript a1_hypothesis_test.R
 ```
 
@@ -55,5 +55,5 @@ When run with `Rscript`, plots are saved to `Rplots.pdf` in the same folder inst
 
 ### Requirements and dependencies
 
-- **R 4.x.** The scripts only use functions built into R, so no packages need installing.
+- **R.** The scripts only use functions built into R, so no packages need installing. Tested with R 4.6.1.
 - No data files are needed. The brief refers to a `red77.txt` file, but the 40 bar masses are typed directly into the A.1 scripts.

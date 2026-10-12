@@ -28,16 +28,16 @@
 
 | Work | Description | Stack |
 | --- | --- | --- |
-| [AE1 — Pet Store System](Assessments/AE1%20-%20Pet%20Store%20System) | A console app for a pet store. Customers can browse pets and items, register and make purchases, and there is an employee section with a login screen. Includes the [simplified brief](Assessments/AE1%20-%20Pet%20Store%20System/Brief%20and%20Info/OOD-AE1-Brief-Simplified.md), a [condensed code report](Assessments/AE1%20-%20Pet%20Store%20System/Submission%20Outputs/OOD-AE1-Code-Report-Condensed.md) and a UML diagram. | C#, .NET 8 |
-| [AE2 — Smart Parking System](Assessments/AE2%20-%20Smart%20Parking%20System) | Group project. A console app that simulates a smart car park with regular, disabled and electric vehicle spaces, built around the Singleton and Observer design patterns. Includes the [simplified brief](Assessments/AE2%20-%20Smart%20Parking%20System/Brief%20and%20Info/OOD-AE2-Brief-Simplified.md), a [condensed code report](Assessments/AE2%20-%20Smart%20Parking%20System/Submission%20Outputs/OOD-AE2-Code-Report-Condensed.txt) and a UML diagram. | C#, .NET 8 |
+| [AE1 — Pet Store System](AE1%20-%20Pet%20Store%20System) | A console app for a pet store. Customers can browse pets and items, register and make purchases, and there is an employee section with a login screen. Includes the [simplified brief](AE1%20-%20Pet%20Store%20System/Brief%20and%20Info/OOD-AE1-Brief-Simplified.md), a [condensed code report](AE1%20-%20Pet%20Store%20System/Submission%20Outputs/OOD-AE1-Code-Report-Condensed.md) and a UML diagram. | C#, .NET 8 |
+| [AE2 — Smart Parking System](AE2%20-%20Smart%20Parking%20System) | Group project. A console app that simulates a smart car park with regular, disabled and electric vehicle spaces, built around the Singleton and Observer design patterns. Includes the [simplified brief](AE2%20-%20Smart%20Parking%20System/Brief%20and%20Info/OOD-AE2-Brief-Simplified.md), a [condensed code report](AE2%20-%20Smart%20Parking%20System/Submission%20Outputs/OOD-AE2-Code-Report-Condensed.txt) and a UML diagram. | C#, .NET 8 |
 
 ### AE1 UML diagram
 
-![Pet store UML class diagram](Assessments/AE1%20-%20Pet%20Store%20System/Submission%20Outputs/OOD-AE1-UML-Diagram.jpg)
+![Pet store UML class diagram](AE1%20-%20Pet%20Store%20System/Submission%20Outputs/OOD-AE1-UML-Diagram.jpg)
 
 ### AE2 UML diagram
 
-![Smart parking system UML class diagram](Assessments/AE2%20-%20Smart%20Parking%20System/Submission%20Outputs/OOD-AE2-UML-Diagram.png)
+![Smart parking system UML class diagram](AE2%20-%20Smart%20Parking%20System/Submission%20Outputs/OOD-AE2-UML-Diagram.png)
 
 ---
 
@@ -46,7 +46,7 @@
 Each assessment is a separate C# project. Run either one from its code folder:
 
 ```bash
-cd "Assessments/AE1 - Pet Store System/AE1 code"        # or "Assessments/AE2 - Smart Parking System/AE2 code"
+cd "AE1 - Pet Store System/AE1 code"        # or "AE2 - Smart Parking System/AE2 code"
 dotnet run
 ```
 
